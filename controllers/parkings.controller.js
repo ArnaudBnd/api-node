@@ -9,11 +9,17 @@ const getAll = function(req, res) {
 }
 
 const post = function(req, res) {
-	res.send(parkingService.post(req.body))
+	res.status(200).json(parkingService.post(req.body))
+}
+
+const put = function(req, res) {
+	console.log('req.params._id', req.params._id)
+	// res.send(parkingService.put())
 }
 
 module.exports = {
     get,
     getAll,
-    post
+    post,
+    put
 }

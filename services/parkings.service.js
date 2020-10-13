@@ -10,12 +10,16 @@ const get = function(_id) {
 
 const post = function(parking) {
 	data.Parkings.push(parking)
-
 	return data
+}
+
+const put = function(_id) {
+	console.log('_id', _id)
 }
 
 module.exports = {
     get,
     getAll,
-    post
+    post,
+    put
 }

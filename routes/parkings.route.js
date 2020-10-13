@@ -12,4 +12,7 @@ router.route('/:_id')
 router.route('/')
     .post(parkingsController.post)
 
+router.route('/:_id')
+    .put(parkingsController.put)
+
 module.exports = router
